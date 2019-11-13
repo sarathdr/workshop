@@ -5,7 +5,7 @@ jobs:
     docker:
       - import: circle/node:10
     steps:
-      - run: checkout
+      - checkout
       - run: npm install
       - run: npm run lint
       - run: npm run build
