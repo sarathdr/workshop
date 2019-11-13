@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - import: circle/node:10
+      - image: circleci/node:10
     steps:
       - checkout
       - run: npm install
